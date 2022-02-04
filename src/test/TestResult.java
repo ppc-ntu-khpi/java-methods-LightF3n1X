@@ -1,12 +1,10 @@
-package test;
-
-import domain.Exercise;
-
 public class TestResult {
 
     public static void main(String[] args) {
-
-        int R=10;
-        System.out.println("Area of a circle for R="+R+"m is "+Exercise.Calculate(R)+"m"+'\u00B2');
+        int decimal = 123456;
+        String[] converted = Exercise.Calculate(decimal);
+        System.out.println(String.valueOf(decimal) + " in binary = " + converted[0]);
+        System.out.println(String.valueOf(decimal) + " in octal = " + converted[1]);
+        System.out.println(String.valueOf(decimal) + " in hex = " + converted[2]);
     }
 }
